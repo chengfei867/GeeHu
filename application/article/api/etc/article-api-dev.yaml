@@ -1,0 +1,24 @@
+Name: article-api
+Host: 0.0.0.0
+Port: 80
+Auth:
+  AccessSecret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  AccessExpire: 604800
+  RefreshSecret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  RefreshExpire: 2592000
+  RefreshAfter: 604800
+Oss:
+  Endpoint: oss-cn-shanghai.aliyuncs.com
+  AccessKeyId: xxxxxxxxxxxxxxxxxxxx
+  AccessKeySecret: xxxxxxxxxxxxxxxxxxxx
+  BucketName: beyond-article
+ArticleRPC:
+  Target: k8s://beyond/article-rpc:9090
+  NonBlock: false
+UserRPC:
+  Target: k8s://beyond/user-rpc:9090
+  NonBlock: false
+Prometheus:
+  Host: 0.0.0.0
+  Port: 9101
+  Path: /metrics
