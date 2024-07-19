@@ -151,9 +151,9 @@ type ArticlesRequest struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	UserId    int64 `protobuf:"varint,1,opt,name=userId,proto3" json:"userId,omitempty"`
-	Cursor    int64 `protobuf:"varint,2,opt,name=cursor,proto3" json:"cursor,omitempty"`
-	PageSize  int64 `protobuf:"varint,3,opt,name=pageSize,proto3" json:"pageSize,omitempty"`
+	UserId   int64 `protobuf:"varint,1,opt,name=userId,proto3" json:"userId,omitempty"`
+	Cursor   int64 `protobuf:"varint,2,opt,name=cursor,proto3" json:"cursor,omitempty"`
+	PageSize int64 `protobuf:"varint,3,opt,name=pageSize,proto3" json:"pageSize,omitempty"`
 	//排序类型
 	SortType  int32 `protobuf:"varint,4,opt,name=sortType,proto3" json:"sortType,omitempty"`
 	ArticleId int64 `protobuf:"varint,5,opt,name=articleId,proto3" json:"articleId,omitempty"`
